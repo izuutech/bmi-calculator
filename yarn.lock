@@ -2662,12 +2662,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-native-vector-icons@npm:^6.4.18":
+  version: 6.4.18
+  resolution: "@types/react-native-vector-icons@npm:6.4.18"
+  dependencies:
+    "@types/react": "*"
+    "@types/react-native": ^0.70
+  checksum: 1ef458cb5e7a37f41eb400e3153940b1b152e4df76a7c06c7a47c712dbfe46e14b9999f04dde1bd074f338f850e161c6c925174ddea33386b74f8112c940065b
+  languageName: node
+  linkType: hard
+
+"@types/react-native@npm:^0.70":
+  version: 0.70.19
+  resolution: "@types/react-native@npm:0.70.19"
+  dependencies:
+    "@types/react": "*"
+  checksum: 79b504fa56340631079e7c20ea0d9412ec14147b76d0ce189f4403936f529ef1e6fd031383afab117846c5ae039123bcf3afc948bae4432269c6780282726f71
+  languageName: node
+  linkType: hard
+
 "@types/react-test-renderer@npm:^18.0.0":
   version: 18.3.1
   resolution: "@types/react-test-renderer@npm:18.3.1"
   dependencies:
     "@types/react": ^18
   checksum: f8cc23cc8decdb6068cdc8f8c306e189eab8e569443ce97b216e757ee42eb20b18d2280ef41e2955668413f14be92765a3ba86cfcfeeae6b20c965acd9674786
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*":
+  version: 19.1.5
+  resolution: "@types/react@npm:19.1.5"
+  dependencies:
+    csstype: ^3.0.2
+  checksum: 49c01b9d1874e11c02c26f08623474d86093ae02c76cf2b9c952093d855fab505ab8d8aaa162200270bd7b1fc03033859db24f6599affa1d05c5fe46374ecafc
   languageName: node
   linkType: hard
 
@@ -2922,6 +2950,7 @@ __metadata:
     "@react-navigation/native": ^7.1.9
     "@react-navigation/stack": ^7.3.2
     "@types/react": ^18.2.6
+    "@types/react-native-vector-icons": ^6.4.18
     "@types/react-test-renderer": ^18.0.0
     babel-jest: ^29.6.3
     eslint: ^8.19.0
@@ -4960,9 +4989,9 @@ __metadata:
   linkType: hard
 
 "flow-parser@npm:0.*":
-  version: 0.272.0
-  resolution: "flow-parser@npm:0.272.0"
-  checksum: 069bf19d4f89c90ef3106ed5d964d10ae5b53df5c925fe108a8f2e9cd993e3e301479ebe0de140b0b5cdbf9092fb45a46778c4cc8ab6fb70ca1985a6379dc8e3
+  version: 0.272.1
+  resolution: "flow-parser@npm:0.272.1"
+  checksum: ebd9fee5ee662f1bef52715cb284f6ac8ba3fcaed4e5e97e3474cf888da4f8d8133ca63921ff467ab6f229ef9128e01436d0c22cb5039a68955d8b3e68ee9beb
   languageName: node
   linkType: hard
 
@@ -9254,12 +9283,12 @@ __metadata:
   linkType: hard
 
 "tinyglobby@npm:^0.2.12":
-  version: 0.2.13
-  resolution: "tinyglobby@npm:0.2.13"
+  version: 0.2.14
+  resolution: "tinyglobby@npm:0.2.14"
   dependencies:
     fdir: ^6.4.4
     picomatch: ^4.0.2
-  checksum: 3a2e87a2518cb3616057b0aa58be4f17771ae78c6890556516ae1e631f8ce4cfee1ba1dcb62fcc54a64e2bdd6c3104f4f3d021e1a3e3f8fb0875bca380b913e5
+  checksum: 261e986e3f2062dec3a582303bad2ce31b4634b9348648b46828c000d464b012cf474e38f503312367d4117c3f2f18611992738fca684040758bba44c24de522
   languageName: node
   linkType: hard
 

@@ -11,23 +11,21 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({
   bmiData,
   onRecipePress,
 }) => {
-  // Get color based on BMI category
   const getBMIColor = (): string => {
     switch (bmiData.category) {
       case 'underweight':
-        return '#FFA500'; // Orange
+        return '#FFA500';
       case 'normal':
-        return '#4CAF50'; // Green
+        return '#4CAF50';
       case 'overweight':
-        return '#FFC107'; // Yellow
+        return '#FFC107';
       case 'obese':
-        return '#F44336'; // Red
+        return '#F44336';
       default:
-        return '#2196F3'; // Blue (fallback)
+        return '#2196F3';
     }
   };
 
-  // Get recommendation message based on BMI category
   const getRecommendationMessage = (): string => {
     switch (bmiData.category) {
       case 'underweight':
@@ -43,7 +41,6 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({
     }
   };
 
-  // Capitalize first letter of category
   const formattedCategory =
     bmiData.category.charAt(0).toUpperCase() + bmiData.category.slice(1);
 

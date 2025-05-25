@@ -18,12 +18,12 @@ const App = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{title: 'BMI Calculator'}}
+          options={{title: 'BMI Calculator', headerShown: false}}
         />
         <Stack.Screen
           name="Recipe"
           component={RecipeScreen}
-          options={{title: 'Recommended Recipe'}}
+          options={{title: 'Recommended Recipe', headerShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>

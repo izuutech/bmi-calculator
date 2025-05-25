@@ -5,6 +5,7 @@ import ResultDisplay from '../components/ResultDisplay';
 import {calculateBMI, getBMICategory} from '../utils/bmiCalculator';
 import {styles} from '../assets/styles';
 import {UserData, BMIResult, HomeScreenProps, BMICategory} from '../types';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
   const [bmiData, setBmiData] = useState<BMIResult | null>(null);
@@ -16,10 +17,14 @@ const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
   });
 
   const handleCalculate = () => {
-    const {weight, height} = userData;
+    const {weight, height, age} = userData;
 
     if (!weight || !height) {
       Alert.alert('Error', 'Please enter both weight and height');
+      return;
+    }
+    if (isNaN(Number(weight)) || isNaN(Number(age)) || isNaN(Number(height))) {
+      Alert.alert('Error', 'Weight, age and height must be a number');
       return;
     }
 
@@ -41,7 +46,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <ScrollView
         accessible={true}
         showsVerticalScrollIndicator={false}
@@ -61,7 +66,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
           />
         )}
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 

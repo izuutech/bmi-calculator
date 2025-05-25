@@ -1,7 +1,6 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 
-// Define types for BMI calculation
 export type BMICategory = 'underweight' | 'normal' | 'overweight' | 'obese';
 
 export interface BMIResult {
@@ -24,7 +23,7 @@ export interface Recipe {
 }
 
 export interface HomeScreenProps {
-  navigation: any; // Would import proper type from @react-navigation
+  navigation: any;
 }
 
 export type RootStackParamList = {
